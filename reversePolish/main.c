@@ -14,7 +14,7 @@ struct node* top;
 void initialize(struct node* top){
   top=NULL;
 }
-
+//push() function will insert an element in stack
 void push(double value){
   struct node* tmp;
   tmp=malloc(sizeof(struct node));
@@ -22,7 +22,7 @@ void push(double value){
   tmp -> next = top;
   top = tmp;
 }
-
+//pop() function will revoke an element from stack
 double pop(){
   struct node* tmp;
   double data;
